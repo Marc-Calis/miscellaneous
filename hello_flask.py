@@ -4,9 +4,15 @@
 # $ pip3 install Flask
 # $ FLASK_APP=hello.py flask run
 #  * Running on http://localhost:5000/
-# python3 hello_flask.py
 
+# terminal: python3 hello_flask.py
+
+#!/usr/bin/env python3
+# coding=utf-8
+
+import os.path
 from flask import Flask
+
 app = Flask(__name__)
 
 @app.route("/")
@@ -50,6 +56,9 @@ def about():
     return 'The about page'
 
 # File Uploads
+# https://github.com/arendst/Sonoff-Tasmota/wiki/Python-HTTP-OTA-Server
+# https://github.com/arendst/Sonoff-Tasmota/blob/development/tools/fw_server/fw-server.py
+
 
 if __name__ == '__main__':
     app.run(
