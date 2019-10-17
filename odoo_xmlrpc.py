@@ -1,4 +1,5 @@
 # https://www.odoo.com/documentation/12.0/howtos/backend.html#webservices
+# terminal: cd /Users/admin/Documents/GitHub/miscellaneous
 # terminal: python3 odoo_xmlrpc.py
 
 import xmlrpc.client
